@@ -1,0 +1,158 @@
+#enquiries {
+    .container {
+        margin-bottom: 40px;
+        overflow: hidden;
+        .breadcrumbs-wrapper {
+            max-width: 1240px;
+            margin: 0 auto;
+            .breadcrumb {
+                padding: 10px 16px;
+                list-style: none;
+                max-width: 1240px;
+                li {
+                    display: inline;
+                    font-size: 14px;
+                    a {
+                        color: #1D1D1B;
+                        text-decoration: none;
+                    }
+                }
+            
+                li+li:before {
+                    padding: 8px;
+                    color: black;
+                    content: "/\00a0";
+                }
+            }
+        }
+        .enq-wrapper {
+            display: flex;
+            flex-direction: column;
+            max-width: 608px;
+            width: 90%;
+            margin: 0 auto;
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                h2 {
+                    font-size: 42px;
+                    font-weight: bold;
+                    line-height: 48px;
+                    margin-top: 36px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 24px;
+                }
+                h3 {
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 32px;
+                    margin-top: 56px;
+                }
+            }
+
+        }
+    }
+}
+
+.dropdown-menus {
+    margin-top: 32px;
+    nav {
+        margin : 16px auto; 
+    }
+    
+    span {
+        border-radius: 8px;
+        border: 1px solid #E4E6EE; 
+        padding : 15px;
+        height: 56px;
+        background : #fff; 
+        color : #1D1D1B;
+        cursor: pointer;
+        display: block;
+    }
+    
+    span::after {
+        float: right;
+        right: 10%;
+        content: "+";
+    }
+
+    .slide {
+        clear: both;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
+    }
+    
+    .slide li {padding: 30px;}
+
+    .order-samples {
+        min-height: 120px;
+        background: #F8F8F8;
+        border-radius: 8px;
+        margin-top: 16px;
+        text-align: left;
+        .sample-text {
+            padding: 16px;
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .request {
+        min-height: 120px;
+        background: #F8F8F8;
+        border-radius: 8px;
+        margin-top: 16px;
+        text-align: left;
+        .request-text {
+            padding: 16px;
+            h4 {
+                font-size: 16px;
+            }
+            .submit-request {
+                height: 55px;
+                width: 100%;
+                margin-top: 16px;
+                border-radius: 4px;
+                border: 1px solid #E4E6EE;
+                background: #fff;
+                cursor: pointer;
+                box-sizing: border-box;
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #1D1D1B;
+                }                
+            }
+        }
+    }
+    
+    #touch {position: absolute; opacity: 0; height: 0px;} 
+    
+    #touch:checked + .slide {height: 280px;} 
+
+    #touch:checked {
+        background: #232E37;
+    }
+}
+
+@media (max-width: 540px) {
+    #enquiries {
+        .container {
+            .breadcrumbs-wrapper {
+                text-align: center;
+                margin-top: 24px;
+            }
+        }
+    }
+}

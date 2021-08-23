@@ -1,0 +1,115 @@
+#contact {
+    .container {
+        margin-bottom: 40px;
+        overflow: hidden;
+        .form-wrapper {
+            display: flex;
+            flex-direction: column;
+            max-width: 608px;
+            width: 90%;
+            margin: 0 auto;
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                h2 {
+                    font-size: 26px;
+                    font-weight: bold;
+                    line-height: 48px;
+                    margin-top: 36px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 0 16px 0 32px;
+                }
+            }
+            
+            .top-inputs {
+                display: flex;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                &:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            
+                > .name {
+                    float: left;
+                    width: 48%;
+                    margin-right: 4%;
+                    &:last-child {
+                    margin: 0;
+                    }
+                }
+            }
+
+            input, label {
+                display: block;
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 16px;
+            }
+
+            .form-control, .name-input {
+                display: inline-block;
+                padding: 10px 10px 10px 10px;
+                margin-top: 8px;
+                height: 48px;
+                background: #F8F8F8;
+                border: 1px solid #E4E6EE;
+                border-radius: 4px;
+                width: 100%;
+                outline: none;
+
+            }
+
+            .message-box {
+                height: 112px;
+            }
+            
+            select {
+                appearance: none;
+            }
+             
+            .submit {
+                box-sizing: border-box;
+                border-radius: 4px;
+                padding: 15px 41px;
+                width: 100%;
+                background: #353C58;
+                color: #fff;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 16px 0 48px 0;
+                outline: none;
+            }
+            
+            .phone-contact {
+                min-height: 120px;
+                background: #F8F8F8;
+                border-radius: 8px;
+                margin-top: 16px;
+                text-align: left;
+                .phone-text {
+                    padding: 16px;
+                    h4 {
+                        padding-bottom: 8px;
+                    }
+                    p {
+                        padding-bottom: 16px;
+                    }
+                    .bold {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}

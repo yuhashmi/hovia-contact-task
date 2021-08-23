@@ -1,0 +1,206 @@
+#footer-features {
+    background-color: #1D1D1B;
+    .container {
+        font-family: 'Roboto', sans-serif;
+        padding-top: 3em;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .main-footer {
+            max-width: 1240px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto; 
+            .footer-links {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+    .top-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .social-media {
+            display: flex;
+            justify-content: flex-end;
+            .pint {
+                margin-left: 16px;
+            }
+        }
+    }
+    
+    hr {
+        margin: 30px auto 0;
+        height: 1px;
+        border: none;
+        opacity: 30%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .column-1 {
+        .trustpilot {
+            margin-top: 31px;
+        }
+        .comm-box {
+            height: 208px;
+            width: 296px;
+            color: #fff;
+            background: #242424;
+            margin-top: 24px;
+            .comm-text-area {
+                padding: 16px 16px 16px 16px;
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-top: 8px;
+                }
+            }
+            .learn-more-btn {
+                height: 56px;
+                width: 264px;
+                border-radius: 4px;
+                margin-top: 16px;
+                cursor: pointer;
+                a {
+                    font-size: 16px;
+                    line-height: 23px;
+                    font-weight: bold;
+                    color: #1D1D1B;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .footer-titles {
+        padding: 31px 0 16px 0;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    .list {
+        li {
+            margin-bottom: 16px;
+            a {
+                text-decoration: underline;
+                gap: 20px;
+                color: #fff;
+            }
+        }
+    }
+    
+    
+    li {
+        list-style: none;
+        padding-bottom: 7px;
+        font-size: 14px;
+        line-height: 19px;
+        cursor: pointer;
+    }
+    
+    
+    p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 24px;
+    }
+
+    .column-4 {
+        width: 230px;
+        margin-right: 40px;
+        .flag-box, .security-box {
+            display: table;
+            width: 100%;
+        }
+        img {
+            margin-right: 8px;
+        }
+    }    
+    
+    .policy-list {
+        max-width: 400px;
+        margin-top: 31px;
+        .list-1 {
+            display: flex;
+            justify-content: space-between;
+            a {
+                white-space: nowrap;
+                text-decoration: underline;
+                gap: 20px;
+                color: #fff;
+            }
+        }
+    }
+
+
+    .business-info {
+        margin: -16px 0 47px 0;
+        .latest-date-footer {
+            color: #fff;
+        }
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 1040px) {
+    #footer-features {
+        .footer-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+    
+        .row {
+            justify-content: space-evenly;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-icons {
+            white-space: nowrap;
+        }
+
+        .container .column-1 {
+            order: 3;
+        }
+    
+        .container .column-2 {
+            order: 1;
+        }
+    
+        .container .column-3 {
+            order: 2;
+        }
+    
+        .container .column-4 {
+            order: 4;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #footer-features {
+        .top-content {
+            display: block;
+            margin: auto;
+            .social-media {
+                display: flex;
+                justify-content: center;
+                margin-top: 32px;
+            }
+        }
+
+        .policy-list {
+            .list-1 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
