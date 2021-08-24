@@ -7,7 +7,7 @@ const Enquiries = () => {
                 <div className="breadcrumbs-wrapper">
                     <div className="breadcrumb-nav">
                         <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="home">Home</a></li>
                             <li>Contact us</li>
                         </ul>
                     </div>
